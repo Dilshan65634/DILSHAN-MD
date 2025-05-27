@@ -1,37 +1,48 @@
-//========= alive command ===========
-
-const config = require('../config')
-const {cmd , commands} = require('../command')
+const { cmd, commands } = require('../command');
+const os = require("os");
+const { runtime } = require('../lib/functions');
 
 cmd({
     pattern: "alive",
-    desc: "Check bot online or no.",
+    alias: ["status", "runtime", "uptime"],
+    desc: "Check uptime and system status",
     category: "main",
-    react: "👋",
+    react: "📟",
     filename: __filename
 },
-async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-try{
+async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
+    try {
+        // Generate system status message
+        const status = `┏━❮ DILSHAN MD ❯━
+┃◈┃🤖 ʙᴏᴛ ɴᴀᴍᴇ :DILSHAN MD
+┃◈┃🔖 ᴠᴇʀsɪᴏɴ : 2.0
+┃◈┃📟 ᴘʟᴀᴛғᴏʀᴍ : Linux
+┃◈┃👨‍💻ᴏᴡɴᴇʀ: Dilshan Ashinsa 
 
-let des = `*👋 Hello ${pushname}*
+┃◈┃📆 ʀᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())} 
+┃◈┃📈ʀᴀᴍ ᴜsᴀɢᴇ: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+┃◈┗━━━━━━━━━━━━━━𖣔𖣔
+╰──────────────┈⊷
+> DILSHAN MD`;
 
-╭───────────━━━┈⊷
-┃★╭──────────────
-┃★│ 𝑶𝑾𝑵𝑬𝑹 : \`ᴅɪʟꜱʜᴀɴ_ᴀꜱʜɪɴꜱᴀ`\
-`𝑩𝑨𝑰𝑳𝑬𝒀𝑺` : \`ᴍᴜʟᴛɪ_ᴅᴇᴠɪᴄᴇ`\
-`┃★│𝑻𝒀𝑷𝑬` : \`ɴᴏᴅᴇ.ᴊꜱ`\
-┃★│ 𝑷𝑳𝑨𝑻𝑭𝑶𝑹𝑴 : \`ʀᴇᴘʟɪᴛ`\
-┃★│ 𝑴𝑶𝑫𝑬 : \`ᴘᴜʙʟɪᴄ`\
-┃★│ 𝑷𝑹𝑰𝑭𝑰𝑿 : [.]
-┃★│ 𝑽𝑬𝑹𝑺𝑰𝑶𝑵 : 2.0.0`\
-┃★╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷
- 
-> *©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝙳𝙸𝙻𝚂𝙷𝙰𝙽-𝙼𝙳
-`
-return await conn.sendMessage(from,{image: {url: "https://i.ibb.co/zgCFFCX/SulaMd.jpg"},caption: des},{quoted: mek})
-}catch(e){
-console.log(e)
-reply(`${e}`)
-}
-})
+        // Send the status message with an image
+        await conn.sendMessage(from, { 
+            image: { url: `𝐈𝐀𝐌𝐆𝐄 𝐔𝐑𝐋` },  // Image URL
+            caption: status,
+            contextInfo: {
+                mentionedJid: [m.sender],
+                forwardingScore: 1,
+                isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                    newsletterJid: 'ᑕ𝐇𝐀𝐍𝐄𝐋 𝐉𝐈𝐃',
+                    newsletterName: 'AKINDU MD',
+                    serverMessageId: 143
+                }
+            }
+        }, { quoted: mek });
+
+    } catch (e) {
+        console.error("Error in alive command:", e);
+        reply(`An error occurred: ${e.message}`);
+    }
+});
