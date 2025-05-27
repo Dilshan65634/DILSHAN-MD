@@ -1,7 +1,6 @@
 const config = require('../config')
 const {cmd , commands} = require('../command')
-const os = require("os")
-const {runtime} = require('../lib/functions')
+
 cmd({
     pattern: "menu",
     alias: ["list"],
@@ -32,7 +31,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
 ⦁ *ʀᴇᴘʟʏ ᴡɪᴛʜ ᴛʜᴇ ɴᴜᴍʙᴇʀ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ sᴇʟᴇᴄᴛ*
 
-> *ᴅɪʟꜱʜᴀɴ ᴍᴅ*`;
+> *ᴀᴋɪɴᴅᴜ ᴍᴅ*`;
 
         const vv = await conn.sendMessage(from, { image: { url:config.ALIVE_IMG}, caption: desc }, { quoted: mek });
 
@@ -175,20 +174,11 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
 ⭓ *ᴛᴏᴛᴀʟ ᴄᴏᴍᴍᴀɴᴅs ʟɪsᴛ ᴏᴛʜᴇʀ 02*
 
-> *ᴀᴋɪɴᴅᴜ ᴍᴅ*`);
+> *ᴀᴋɪɴᴅᴜ ᴍᴅ*`
 
-
-                       break;
-                    default:
-                        reply("ᴘʟᴇᴀꜱᴇ ꜱᴇʟᴇᴄᴛ ᴠᴀʟɪᴅ ᴏᴘᴄᴛɪᴏɴ 🤖");
-                }
-
-            }
-        });
-
-    } catch (e) {
-        console.error(e);
-        await conn.sendMessage(from, { react: { text: '❌', key: mek.key } })
-        reply('An error occurred while processing your request.');
-    }
-});
+return await conn.sendMessage(from,{image: {url: "https://i.ibb.co/zgCFFCX/SulaMd.jpg"},caption: des},{quoted: mek})
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
