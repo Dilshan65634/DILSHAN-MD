@@ -27,14 +27,14 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
         // Send the status message with an image
         await conn.sendMessage(from, { 
-            image: { url: `https://i.ibb.co/Kx3sxSfr/dinuzzmd.jpg` },  // Image URL
+            image: { url: `https://files.catbox.moe/uod3xi.jpg` },  // Image URL
             caption: status,
             contextInfo: {
                 mentionedJid: [m.sender],
                 forwardingScore: 1,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: 'ᑕ𝐇𝐀𝐍𝐄𝐋 𝐉𝐈𝐃',
+                    newsletterJid: 'DILSHAN MD',
                     newsletterName: 'DILSHAN MD',
                     serverMessageId: 143
                 }
