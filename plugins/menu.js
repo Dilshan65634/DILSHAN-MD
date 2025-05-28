@@ -146,7 +146,7 @@ cmd({
               if (_0x2ea0c9.image) {
                 await _0x1f175b.sendMessage(_0x473499, {
                   'image': {
-                    'url':"https://i.ibb.co/Kx3sxSfr/dinuzzmd.jpg""
+                    'url':"https://i.ibb.co/Kx3sxSfr/dinuzzmd.jpg"
                   },
                   'caption': _0x2ea0c9.content,
                   'contextInfo': _0x18e40d
