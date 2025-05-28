@@ -29,7 +29,7 @@ cmd({
       try {
         return await _0x1f175b.sendMessage(_0x98cd0, {
           'image': {
-            'url':"https://i.ibb.co/Kx3sxSfr/dinuzzmd.jpg'',
+            'url':"https://i.ibb.co/Kx3sxSfr/dinuzzmd.jpg"
           },
           'caption': _0x3a9262,
           'contextInfo': _0x18e40d
