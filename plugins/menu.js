@@ -1,43 +1,69 @@
+const {cmd , commands} = require('../command')
+
 cmd({
-  pattern: "menu",
-  desc: "Show interactive menu system",
-  category: "menu",
-  react: "📁",
-  filename: __filename,
-}, async (m, conn) => {
-  const menuText = `
-┏━━━━━━━━━━━━━━┓
-┃   *DILSHAN MD MENU*  
-┗━━━━━━━━━━━━━━┛
+    pattern: "menu",
+    desc: "menu the bot",
+    category: "menu",
+    react: "📃",
+    filename: __filename
+},
 
-1┃• AI  
-2┃• ANIME  
-3┃• REACTION  
-4┃• CONVERT  
-5┃• FUN  
-6┃• DOWNLOAD  
-7┃• LIST  
-8┃• MAIN MENU  
-9┃• GROUP MENU  
-10┃• ALL MENU  
-11┃• OWNER MENU  
-12┃• OTHER MENU
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
+try{
 
-Powered by: *DILSHAN MD*
-  `;
-  await m.sendMessage(m.jid, { text: menuText }, { quoted: m });
-});
-await _0x1f175b.sendMessage(_0x98cd0, {
-  image: {
-    url: config.MENU_IMAGE_URL || 'https://i.ibb.co/Kx3sxSfr/dinus.jpg'
-  },
-  caption: _0x3a9262,
-  buttons: [
-    {
-      buttonId: `.menu`,
-      buttonText: { displayText: '🔗 Visit Website' },
-      type: 1
-    }
-  ],
-  footer: 'DILSHAN MD BOT'
-}, { quoted: _0x482d64 });
+let dec = `
+
+╭─────────────━┈⊷
+│👾 ʙᴏᴛ ɴᴀᴍᴇ: ᴅᴀʀᴋ-ꜱʜᴀᴅᴏᴡ-ᴍᴅ
+│👨‍💻 ᴏᴡɴᴇʀ : ᴘᴀᴛʜᴜᴍ ᴍᴀʟꜱᴀʀᴀ  
+│👤 ɴᴜᴍʙᴇʀ: +94 77 066 4515
+│💻 HOSTER: ᴅᴀʀᴋ-ꜱʜᴀᴅᴏᴡ
+│💫 ᴘʀᴇғɪx: [Multi-Prefix]
+╰─────────────━┈⊷ 
+╭━❮ 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙴𝚁 ❯━╮
+┃✰ .𝚂𝚝𝚒𝚌𝚔𝚎𝚛
+╰━━━━━━━━━━━━━━━⪼
+╭━❮ 𝙰𝙸 ❯━╮
+┃✰ .𝙰𝚒
+╰━━━━━━━━━━━━━━━⪼
+╭━❮ 𝙶𝚁𝙾𝚄𝙿 ❯━╮
+┃✰ 𝙻𝚒𝚗𝚔𝙶𝚛𝚘𝚞𝚙
+┃✰ 𝚂𝚎𝚝𝚙𝚙𝚐𝚌
+┃✰ .𝚂𝚎𝚝𝚗𝚊𝚖𝚎
+┃✰ .𝚂𝚎𝚝𝚍𝚎𝚜𝚌
+┃✰ .𝙶𝚛𝚘𝚞𝚙
+┃✰ .𝚂𝚎𝚝𝚐𝚘𝚘𝚍𝚋𝚞𝚢
+┃✰ .𝚂𝚎𝚝𝚠𝚎𝚕𝚌𝚘𝚖𝚎
+┃✰ .𝙰𝚍𝚍
+┃✰ .𝚁𝚎𝚖𝚘𝚟𝚎
+┃✰ .𝙿𝚛𝚘𝚖𝚘𝚝𝚎
+┃✰ .𝙳𝚎𝚖𝚘𝚝𝚎
+╰━━━━━━━━━━━━━━━⪼
+╭━❮ 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 ❯━╮
+┃✰ .𝙵𝚊𝚌𝚎𝚋𝚘𝚘𝚔
+┃✰ .𝙼𝚎𝚍𝚒𝚊𝚏𝚒𝚛𝚎
+┃✰ .𝙶𝚍𝚛𝚒𝚟𝚎
+┃✰ .𝙸𝚗𝚜𝚝𝚊
+┃✰ .𝚂𝚘𝚗𝚐
+┃✰ .𝚅𝚒𝚍𝚎𝚘
+┃✰ .𝚈𝚝𝚖𝚙3𝚍𝚘𝚌
+┃✰ .𝚈𝚝𝚖𝚙4𝚍𝚘𝚌
+┃✰ .𝚃𝚒𝚔𝚝𝚘𝚔
+╰━━━━━━━━━━━━━━━⪼
+╭━❮ 𝙼𝙰𝙸𝙽 ❯━╮
+┃✰ .𝙿𝚒𝚗𝚐
+┃✰ .𝙰𝚕𝚒𝚟𝚎
+┃✰ .𝙾𝚠𝚗𝚎𝚛
+┃✰ .𝙼𝚎𝚗𝚞
+|✰ .𝚁𝚎𝚙𝚘
+╰━━━━━━━━━━━━━━━⪼
+
+ ©𝗣𝗢𝗪𝗘𝗥𝗗 𝗯𝘆 𝗗𝗜𝗟𝗦𝗛𝗔𝗡-𝗠𝗗
+`
+await conn.sendMessage(from,{image:{url: `https://i.ibb.co/Kx3sxSfr/dinuzzmd.jpg`},caption:dec},{quoted:mek});
+
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
