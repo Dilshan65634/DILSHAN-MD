@@ -16,10 +16,6 @@
 
   <br>
 
----
-
-<a href="https://pair-web-public.koyeb.app/"><img src="https://img.shields.io/badge/PAIR=CYBER-MD-greeen" alt="Create cyber-md bot" width="200"></a>
-
 
 
 
@@ -41,7 +37,7 @@
 <br>
  
   <p align="center">  
-  <a href="https://telegra.ph/file/87e7ae0d50a3fa8f1ff4e.jpg">
+  <a href="https://files.catbox.moe/zqu8s7.jpg">
     <img alt="cyber-md" height="600" src="https://telegra.ph/file/87e7ae0d50a3fa8f1ff4e.jpg">
     
   
