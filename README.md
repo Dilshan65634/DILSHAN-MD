@@ -38,7 +38,7 @@
  
   <p align="center">  
   <a href="https://files.catbox.moe/zqu8s7.jpg">
-    <img alt="cyber-md" height="600" src="https://telegra.ph/file/87e7ae0d50a3fa8f1ff4e.jpg">
+    <img alt="cyber-md" height="600" src="https://files.catbox.moe/zqu8s7.jpg">
     
   
   </a>
