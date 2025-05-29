@@ -4,7 +4,7 @@ const {
   commands
 } = require("../command");
 cmd({
-  'pattern': "2menu",
+  'pattern': "menu",
   'desc': "Show interactive menu system",
   'category': 'menu',
   'react': '🚀',
@@ -45,8 +45,8 @@ cmd({
       'forwardingScore': 0x3e7,
       'isForwarded': true,
       'forwardedNewsletterMessageInfo': {
-        'newsletterJid': "",
-        'newsletterName':"ᴅɪʟꜱʜᴀɴ ᴀꜱʜɪɴꜱᴀ",
+        'newsletterJid': "120363399450741861@newsletter",
+        'newsletterName':"𝕮𝖍𝖊𝖙𝖍𝖎𝖞𝖆_𝕸𝕯",
         'serverMessageId': 0x8f
       }
     };
@@ -76,7 +76,7 @@ cmd({
         await new Promise(_0x3a860f => setTimeout(_0x3a860f, 0x3e8));
         await _0x1f175b.sendMessage(_0x98cd0, {
           'audio': {
-            'url': ""
+            'url': "https://files.catbox.moe/g50hun.m4a"
           },
           'mimetype': "audio/mp4",
           'ptt': true
