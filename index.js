@@ -6,8 +6,8 @@ jidNormalizedUser,
 getContentType,
 fetchLatestBaileysVersion,
 Browsers
-} = require('"@whiskeysockets/baileys": "github:MR-LAKIYA/Baileys",
-"jimp": "0.16.1",') 
+} = require("@whiskeysockets/baileys": "github:MR-LAKIYA/Baileys",
+"jimp": "0.16.1",)
 
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson } = require('./lib/functions')
 const fs = require('fs')
