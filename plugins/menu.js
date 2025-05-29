@@ -109,12 +109,12 @@ cmd({
         'content': `╭━━━〔 *Download Menu* 〕━━━┈⊷
         ┃☢️╭──────────────
         ┃🚀│ 🌐 *Social Media*
-        ┃🚀│ • facebook [url]
+        ┃🚀│ • fb [url]
         ┃🚀│ • mediafire [url]
         ┃🚀│ • tiktok [url]
         ┃🚀│ • twitter [url]
         ┃🚀│ • Insta [url]
-        ┃🚀│ • apk [app]
+        ┃🚀│ • apk
         ┃🚀│ • img [query]
         ┃🚀│ • tt2 [url]
         ┃🚀│ • pins [url]
@@ -122,18 +122,8 @@ cmd({
         ┃🚀│ • fb2 [url]
         ┃🚀│ • pinterest [url]
         ┃🚀│ • porn
-        ┃🚀│ • xvideos
-        ┃🚀│ ⏮️🎵 *Music/Video⏩
-        ┃🚀│ • spotify [query]
-        ┃🚀│ • play [song]
-        ┃🚀│ • play2-10 [song]\n
-        ┃🚀│ • audio [url]
+        ┃🚀│ • xvdl
         ┃🚀│ • video [url]
-        ┃🚀│ • video2-10 [url]
-        ┃🚀│ • ytmp3 [url]
-        ┃🚀│ • ytmp4 [url]
-        ┃🚀│ • plyy [name]
-        ┃🚀│ • darama [name]
         ┃☢️╰────────────
         ╰━━━━━━━━━━━━━━━┈⊷
         >🄿🄾🅆🄴🅁🄳 🅱🆈  😈 𝐃𝐈𝐋𝐒𝐇𝐀𝐍 𝐌𝐃  `,
