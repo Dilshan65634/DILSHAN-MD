@@ -80,7 +80,7 @@ require("./plugins/" + plugin);
 console.log('Plugins installed successful ✅')
 console.log('dilshan-md ᴄᴏɴᴇᴄᴛᴇᴅ✅')
   
-let up = `*DILSHAN MD 𝔹𝕆𝕋 ℂ𝕆ℕ𝔼ℂ𝕋𝔼𝔻🧑🏻‍💻*`;
+let up = `DILSHAN MD 𝔹𝕆𝕋 ℂ𝕆ℕ𝔼ℂ𝕋𝔼𝔻 𝕊𝕌ℂℂ𝔼𝕊𝕊𝔽𝕌𝕃𝕃𝕐 𝔻𝕆ℕ𝔼✅🧑🏻‍💻`;
 
 conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.ibb.co/zgCFFCX/SulaMd.jpg` }, caption: up })
 
