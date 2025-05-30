@@ -16,7 +16,7 @@ if(!q) return reply("Please give me fb url");
 const fb = await fetchJson(`https://sadiya-tech-apis.vercel.app/download/fbdl?url=${q}&apikey=${apikey}`);
 let fbmsg = `*🎥  FB DL.🎥*
 
-*Title* - ${fb.result.title}`;
+> ©Powerd By DILSHAN MD`;
 
 await conn.sendMessage(from, { image: {url: fb.result.thumb }, caption: fbmsg }, { quoted: mek });
 
