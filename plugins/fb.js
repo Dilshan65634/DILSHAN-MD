@@ -14,14 +14,14 @@ try{
 if(!q) return reply("Please give me fb url");
 
 const fb = await fetchJson(`https://sadiya-tech-apis.vercel.app/download/fbdl?url=${q}&apikey=${apikey}`);
-let fbmsg = `*🎥  FB DL.🎥*
+let fbmsg = 📍`facebook_video•📍
 
 > ©Powerd By DILSHAN MD`;
 
 await conn.sendMessage(from, { image: {url: fb.result.thumb }, caption: fbmsg }, { quoted: mek });
 
-await conn.sendMessage(from, { video: { url: fb.result.sd }, mimetype: "video/mp4", caption: `SD\n\n> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ *` }, { quoted: mek });
-await conn.sendMessage(from, { video: { url: fb.result.hd }, mimetype: "video/mp4", caption: `HD\n\n> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ*` }, { quoted: mek });
+await conn.sendMessage(from, { video: { url: fb.result.sd }, mimetype: "video/mp4", caption: `SD\n\n> *©Powerd By DILSHAN MD*` }, { quoted: mek });
+await conn.sendMessage(from, { video: { url: fb.result.hd }, mimetype: "video/mp4", caption: `HD\n\n> *©Powerd By DILSHAN MD*` }, { quoted: mek });
 
 }catch(e){
 console.log(e)
